@@ -21,7 +21,7 @@ pyautogui.press("enter")
 
 pyautogui.click(x = 855, y = 372)
 
-pyautogui.write("luke@gmail.com")
+pyautogui.write("soueu@gmail.com")
 
 pyautogui.press("tab")
 
