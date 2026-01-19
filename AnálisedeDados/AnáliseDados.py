@@ -1,4 +1,5 @@
-#passo 1 - Abrir a base de dados
+# Fiz usando este arquivo como ipynb. Então julgo ser melhor colocar ele em formato ipynb, separado em passo a passo.
+#passo 1 - Abrir a base de dados.
 
 import pandas as pd
 
@@ -11,7 +12,7 @@ tabela = tabela.drop(columns= "CustomerID")
 
 display(tabela)
 
-#passo 3 - Tratamento de dados
+#passo 3 - Tratamento de dados.
 
 display(tabela.info())
 
@@ -19,7 +20,7 @@ tabela = tabela.dropna()
 
 display(tabela.info())
 
-#passo 4 - Entender quantos clientes cancelaram 1.0 cancelou, 0.0 não não cancelou
+#passo 4 - Entender quantos clientes cancelaram 1.0 cancelou, 0.0 não não cancelou.
 
 display(tabela ["cancelou"].value_counts())
 
@@ -27,7 +28,7 @@ display(tabela["cancelou"].value_counts(normalize= True))
 
 display(tabela["cancelou"].value_counts(normalize= True).map("{:.1%}".format))
 
-#passo 5: Análise detalhada com gráficos(causa do cancelamento dos clientes)
+#passo 5: Análise detalhada com gráficos(causa do cancelamento dos clientes).
 
 
 import plotly.express as px
@@ -39,7 +40,7 @@ for coluna in tabela.columns:
 
     grafico.show()
 
-#problemas resolvidos com porcentagem final
+#problemas resolvidos com porcentagem final.
 
 condicao = tabela["duracao_contrato"] !="Monthly"
 tabela = tabela[condicao]
