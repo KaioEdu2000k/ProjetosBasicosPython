@@ -1,4 +1,5 @@
 # Fiz usando este arquivo como ipynb. Então julgo ser melhor colocar ele em formato ipynb, separado em passo a passo.
+
 #passo 1 - Abrir a base de dados.
 
 import pandas as pd
